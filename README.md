@@ -17,8 +17,8 @@ function(s) {
     s = document.getSelection()
   }
   location.href = "https://github.com/petrosh/gitmarks/issues/new?title=" + 
-    document.title +
-    "&body=[link](" + location + ")" +
+    encodeURIComponent(document.title) +
+    "&body=[link](" + encodeURIComponent(location) + ")" +
     encodeURIComponent("\n---\n" + s)
 }
 ```
