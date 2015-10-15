@@ -12,7 +12,8 @@
       e = document.getElementById("gitmark");
       // e.href="12";
       // console.log(e.href);
-      e.href="javascript:("+username+"/"+repository+")()";
+      string = 'javascript:(function(s){try{s=document.selection.createRange().text}catch(_){s=document.getSelection()}location.href="https://github.com/'+username+'/'+repository+'/issues/new?title="+encodeURIComponent(document.title)+"&body=[link]("+encodeURIComponent(location)+")"+encodeURIComponent("\n---\n"+s)})()';
+      e.href=string;
     }
     </script>
   </head>
