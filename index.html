@@ -12,13 +12,12 @@
       e = document.getElementById("gitmark");
       // e.href="12";
       // console.log(e.href);
-      accapo = encodeURIComponent('\n---\n');
-      string = 'javascript:(function(s){try{s=document.selection.createRange().text}catch(_){s=document.getSelection()}location.href="https://github.com/'+username+'/'+repository+'/issues/new?title=\"+encodeURIComponent(document.title)+\"&body=[link](\"+encodeURIComponent(location)+\")'+accapo+'\"+encodeURIComponent(s)})()';
-      e.href=string;
+      string = 'javascript:(function(s){try{s=document.selection.createRange().text}catch(_){s=document.getSelection()}location.href="https://github.com/'+username+'/'+repository+'/issues/new?title="+document.title+"&body=[link]("+location+")---"+encodeURIComponent(s)})()';
+      e.href='javascript:(function(s){try{s=document.selection.createRange().text}catch(_){s=document.getSelection()}location.href="https://github.com/'+username+'/'+repository+'/issues/new?title="+document.title+"&body=[link]("+location+")"+String.fromCharCode(37)+"0A---"+String.fromCharCode(37)+"0A"+encodeURIComponent(s)})()';
     }
     </script>
   </head>
   <body onload="go()">
-    <a id="gitmark" href=''>git-marks</a>
+    <a id="gitmark" href="">git-marks</a>
   </body>
 </html>
