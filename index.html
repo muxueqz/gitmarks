@@ -8,7 +8,9 @@
       pathslash = window.location.pathname.split( '/' );
       username = pathpoint[0];
       repository = pathslash[1];
-      document.getElementById("gitmark").href="javascript:("+username+"/"+repository+")()";
+      e = document.getElementById("gitmark");
+      console.log(e.href);
+      // document.getElementById("gitmark").href="javascript:("+username+"/"+repository+")()";
     </script>
   </head>
   <body>
