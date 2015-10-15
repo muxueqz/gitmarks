@@ -12,7 +12,7 @@
       e = document.getElementById("gitmark");
       // e.href="12";
       // console.log(e.href);
-      string = 'javascript:(function(s){try{s=document.selection.createRange().text}catch(_){s=document.getSelection()}location.href="https://github.com/'+username+'/'+repository+'/issues/new?title="+encodeURIComponent(document.title)+"&body=[link]("+encodeURIComponent(location)+")"+encodeURIComponent("\r\n---\r\n"+s)})()';
+      string = 'javascript:(function(s){try{s=document.selection.createRange().text}catch(_){s=document.getSelection()}location.href="https://github.com/'+username+'/'+repository+'/issues/new?title="+encodeURIComponent(document.title)+"&body=[link]("+encodeURIComponent(location)+")%0A---%0A"+encodeURIComponent(s)})()';
       e.href=string;
     }
     </script>
