@@ -5,7 +5,7 @@
     <title>git-marks</title>
     <script type="text/javascript">
       pathpoint = window.location.host.split( '.' );
-      path.slash = window.location.pathname.split( '/' );
+      pathslash = window.location.pathname.split( '/' );
       username = pathpoint[0];
       repository = pathslash[1];
       document.getElementById("gitmark").href="javascript:("+username+"/"+repository+")()";
