@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <title>git-marks</title>
     <script type="text/javascript">
+    function go(){
       pathpoint = window.location.host.split( '.' );
       pathslash = window.location.pathname.split( '/' );
       username = pathpoint[0];
       repository = pathslash[1];
       e = document.getElementById("gitmark");
-      console.log(e.href);
-      // document.getElementById("gitmark").href="javascript:("+username+"/"+repository+")()";
+      // e.href="12";
+      // console.log(e.href);
+      e.href="javascript:("+username+"/"+repository+")()";
+    }
     </script>
   </head>
-  <body>
+  <body onload="go()">
     <a id="gitmark" href=''>git-marks</a>
   </body>
 </html>
