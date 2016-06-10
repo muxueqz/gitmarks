@@ -7,7 +7,7 @@ Bookmarks text selections as issues
 1. Browse and select text
 1. Click bookmark
 1. Add labels
-1. Manage and Search bookmarks in the repository <a href="../../issues">issues</a> page<
+1. Manage and Search bookmarks in the repository <a href="../../issues">issues</a> page
 
 ### How
 
