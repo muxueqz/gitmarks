@@ -2,22 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>git-marks</title>
-    <script type="text/javascript">
-    function go(){
-      pathpoint = window.location.host.split( '.' );
-      pathslash = window.location.pathname.split( '/' );
-      username = pathpoint[0];
-      repository = pathslash[1];
-      e = document.getElementById("gitmark");
-      // e.href="12";
-      // console.log(e.href);
-      string = 'javascript:(function(s){try{s=document.selection.createRange().text}catch(_){s=document.getSelection()}location.href="https://github.com/'+username+'/'+repository+'/issues/new?title="+document.title+"&body=[link]("+location+")---"+encodeURIComponent(s)})()';
-      e.href='javascript:(function(s){try{s=document.selection.createRange().text}catch(_){s=document.getSelection()}location.href="https://github.com/'+username+'/'+repository+'/issues/new?title="+document.title+"&body=[link]("+location+")"+String.fromCharCode(37)+"0A---"+String.fromCharCode(37)+"0A"+encodeURIComponent(s)})()';
-    }
-    </script>
+    <title>gitmarks</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="script.js" defer></script>
   </head>
-  <body onload="go()">
-    <a id="gitmark" href="">git-marks</a>
+  <body>
+    <header>
+      <h1>gitmarks</h1>
+      <h3>Bookmarks text selections as issues</h3>
+    </header>
+    <main>
+      <section>
+        <header>
+          <p>
+            Drag this link n your browser toolbar.
+          </p>
+          <a id="bookmark" href="">gitmarks</a>
+        </header>
+        <blockquote cite="https://en.wikipedia.org/wiki/Bookmarklet">
+          Bookmarklets add one-click functions to a browser or web page.
+        </blockquote>
+        <h3>What</h3>
+        <ol>
+          <li>Browse and select text</li>
+          <li>Click bookmark</li>
+          <li>Add labels</li>
+          <li>Manage and Search bookmarks</li>
+        </ol>
+        <h3>How</h3>
+        <ol>
+          <li>Fork https://github.com/petrosh/gitmarks</li>
+          <li>Make a commit to build gh-pages: <a href="../../edit/gh-pages/README.md">edit `README.md`</a></li>
+          <li>Browse to `https://<yourusername>.github.io/gitmarks`</li>
+          <li>Drag the bookmarklet below on your toolbar</li>
+        </ol>
+        <p>
+          Manage bookmarks in the repository <a href="../../issues">issues page</a>.
+        </p>
+      </section>
+    </main>
+    <footer>
+    </footer>
   </body>
 </html>
