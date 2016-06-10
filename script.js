@@ -3,7 +3,7 @@ var hostArray = window.location.host.split('.'),
     username = hostArray[0],
     repository = pathArray[1],
     fullName = username + '/' + repository,
-    issuesHref = 'https://github.com/' + fullname,
+    issuesHref = 'https://github.com/' + fullName,
     issuesElement = document.getElementById('issues'),
     bookmarkElement = document.getElementById('bookmark');
 
