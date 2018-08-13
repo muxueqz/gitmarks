@@ -33,7 +33,7 @@ Bookmarks text selections as issues
 >   } catch(_) {
 >     s = document.getSelection()
 >   }
->   location.href = "https://github.com/petrosh/gitmarks/issues/new?title=" +
+>   location.href = "https://github.com/muxueqz/gitmarks/issues/new?title=" +
 >   encodeURIComponent(document.title) +
 >   "&body=" + encodeURIComponent(location) +
 >   String.fromCharCode(37) + "0A---" + String.fromCharCode(37) + "0A" +
